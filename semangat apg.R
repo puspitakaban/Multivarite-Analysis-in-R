@@ -222,9 +222,6 @@ mat_contrass = function(p){
   }
 }
 
-PA_satu_sampel = function(data, alpha){
-  
-}
 paralel_PA_dua_sampel = function(data1, data2, alpha){
   m1 = mean_vector(data1)
   m2 = mean_vector(data2)
@@ -236,14 +233,10 @@ paralel_PA_dua_sampel = function(data1, data2, alpha){
   p = dim(data1)[2]
   C = mat_contrass(p)
   T2 = n1*n2/(n1+n2)*t(m1-m2)%*%t(C)%*%solve(C%*%Sgab%*%t(C))%*%C%*%(m1-m2)
-  
+#Not done yet  
 }
-mat_contrass(4)
 
 ################################################################################
 ############################# MANOVA ###########################################
 ################################################################################
 
-manova_2_sampel = function(data1, data2){
-  install.packages("knitr")
-}
